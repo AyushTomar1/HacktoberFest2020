@@ -1,8 +1,7 @@
 def fact(n):
-    f = 1
-    for i in range(1,n+1):
-        f = f * i
-    return f
+    if n==1 or n==0:
+        return 1
+    return n*fact(n-1)
 
 x = int(input("Enter The number "))
 r = fact(x)
